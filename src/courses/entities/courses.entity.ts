@@ -18,6 +18,7 @@ export class Course {
   @Column()
   description: string;
 
+  // Nome da tabela de relacionamento (N - N)
   @JoinTable({
     name: 'courses_tags_relation',
   })
